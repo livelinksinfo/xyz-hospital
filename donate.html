@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisstration Page</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="images/Cure-Logo-.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="main">
+        <section class="image">
+            <div class="section-1">
+                <h1 class="topic">XYZ CLINICAL HOSPITAL</h1>
+            </div>
+        </section>
+
+
+        <div class="form">
+            <h1>SAVE A LIFE, DONATE BLOOD</h1>
+            <form action="register.html" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="name" id="name-label">Name: </label><br>
+                    <input type="text" class="form-control" id="name" placeholder="Peter Perker" required title="This field is required">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">E-mail: </label><br>
+                    <input type="email" class="form-control" id="email" placeholder="joe@example.com" required title="This field is required">
+                </div>
+                <div class="form-group">
+                    <label for="age" id="number-label">Age (Optional) </label><br>
+                    <input type="number" class="form-control" id="" placeholder="Age" min="10" max="45" title="minimum age is 10">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Genger: </label><br>
+                    <label for="fmale" class="radio">
+                <input type="radio" value="Male" name="fmale" > Male </label>
+                    <label for="fmale">
+                <input type="radio" value="Female" name="fmale" > Female</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Occupation </label><br>
+                    <select id="dropdown" class="form-control">
+                    <option value="">Select an option</option>
+                    <option value="civil servant">Civil servant</option>
+                    <option value="self-employee">Self-Employeess</option>
+                    <option value="student">Student</option>
+                    <option value="other">Others</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="blood">Select Your Blood Group</label>
+                    <select name="blood-group" class="form-control" id="blood">
+                    <option value="group A">A</option>
+                    <option value="group B">B</option>
+                    <option value="group AB+">AB+</option>
+                    <option value="group O">O</option>
+                    <option value="group O+">O+</option>
+                </select>
+                </div>
+                <legend>
+                    <caption>Availability</caption>
+                    <div class="form-group">
+                        <label for="date" id="number-label">Available Date for Donation: </label>
+                        <input type="date" class="form-control" id="" required>
+                    </div>
+                </legend>
+
+
+                <div class="form-group">
+                    <label for="message">Any Comments or Suggestions</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Enter your comment here"></textarea>
+                </div>
+                <input type="submit" value="Submit" name="submit" class="btn">
+            </form>
+
+
+        </div>
+        <a href="index.html" class="bottom">Go back to Homepage</a>
+    </div>
+</body>
+
+</html>
